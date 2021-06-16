@@ -579,6 +579,7 @@ if((INSTALL_CREATE_DISTRIB AND BUILD_SHARED_LIBS AND NOT DEFINED BUILD_opencv_wo
   set(BUILD_opencv_world ON CACHE INTERNAL "")
 endif()
 
+include_directories("modules")
 include(cmake/OpenCVInstallLayout.cmake)
 
 # ----------------------------------------------------------------------------
